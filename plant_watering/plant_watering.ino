@@ -1,12 +1,13 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
+#include "secrets.h"
 
-const char* ssid = "<your-SSID>";
-const char* password = "<your-PASSWORD>";	
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
-const char* mqtt_server = "<your-MQTT-SERVER>";
-const char* mqtt_user = "<your-MQTT-USER>";
-const char* mqtt_pass = "<your-MQTT-PASSWORD>";
+const char* mqtt_server = MQTT_SERVER;
+const char* mqtt_user = MQTT_USERNAME;
+const char* mqtt_pass = MQTT_PASSWORD;
 
 const int pumpPin = D3;
 
